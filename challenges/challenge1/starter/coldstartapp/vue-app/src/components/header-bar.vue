@@ -16,9 +16,9 @@ export default {
     HeaderBarBrand,
     AuthLogin,
   },
-  data() {
+  async data() {
     return {
-      user: getUserInfo(),
+      user: await getUserInfo(),
     };
   },
   methods: {
