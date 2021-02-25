@@ -13,6 +13,7 @@ module.exports = {
     'consistent-return': 0,
     'linebreak-style': 'off',
 	'import/prefer-default-export': 'off',
+	'global-require': 'off',
     quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     // 'prettier/prettier': [
     //   'error',
