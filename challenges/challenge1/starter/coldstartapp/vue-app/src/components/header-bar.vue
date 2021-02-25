@@ -3,7 +3,9 @@ import HeaderBarBrand from '@/components/header-bar-brand.vue';
 import AuthLogin from '@/components/auth-login.vue';
 
 async function getUserInfo() {
+  debugger;
   const response = await fetch('/.auth/me');
+  debugger;
   const payload = await response.json();
   const { clientPrincipal } = payload;
   return clientPrincipal;
@@ -18,7 +20,7 @@ export default {
   },
   data() {
     return {
-      user: getUserInfo()
+      user: getUserInfo(),
     };
   },
   methods: {
