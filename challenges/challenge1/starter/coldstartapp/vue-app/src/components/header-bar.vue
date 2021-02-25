@@ -16,12 +16,15 @@ export default {
     HeaderBarBrand,
     AuthLogin,
   },
-  async data() {
+  data() {
     return {
-      user: await getUserInfo(),
+      user: null,
     };
   },
   methods: {
+  },
+  async created() {
+    this.user = await getUserInfo();
   },
 };
 </script>
